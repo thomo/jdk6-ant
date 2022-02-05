@@ -1,5 +1,6 @@
 #!/bin/bash
 
-TS=`date +%Y%m%d%H%M%S`
+VERSION=1.0
+NAME=j6-ant
 
-docker build -t j6:${TS} -t j6 .
+docker build -t ${NAME}:${VERSION} -t ${NAME} .
