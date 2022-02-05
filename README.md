@@ -2,3 +2,20 @@
 Docker image with jdk6 and ant
 
 Image is available on [docker hub](https://hub.docker.com/repository/docker/thomo/j6-ant)
+
+## Usage
+
+- (optional) build the image 
+  ```sh
+  ./build
+  ```
+
+- run the default ant tast - assume your source code is in current folder
+  ```sh
+  docker run --rm -it -v ${PWD}:/data thomo/j6-ant
+  ```
+
+- run the test ant task
+  ```sh
+  docker run --rm -it -v ${PWD}:/data thomo/j6-ant ant test
+  ```
