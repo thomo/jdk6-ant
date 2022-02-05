@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=1.0
-NAME=j6-ant
+VERSION=`grep version Dockerfile | cut -d= -f 2 | tr -d \"`
+NAME=thomo/j6-ant
 
 docker build -t ${NAME}:${VERSION} -t ${NAME} .
