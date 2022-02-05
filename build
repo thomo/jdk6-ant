@@ -1,0 +1,5 @@
+#!/bin/bash
+
+TS=`date +%Y%m%d%H%M%S`
+
+docker build -t j6:${TS} -t j6 .
