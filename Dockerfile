@@ -1,9 +1,9 @@
-FROM java:6-jdk
+FROM openjdk:6b38-jdk-slim
 
 LABEL org.opencontainers.image.authors="Thomas.Mohaupt@gmail.com"
 LABEL org.opencontainers.image.url="https://github.com/thomo/jdk6-ant"
 LABEL org.opencontainers.image.documentation="https://github.com/thomo/jdk6-ant/blob/main/README.md"
-LABEL org.opencontainers.image.version="1.2"
+LABEL org.opencontainers.image.version="1.3"
 LABEL org.opencontainers.image.description="jdk6 with ant"
 
 RUN echo "deb http://archive.debian.org/debian wheezy main" > /etc/apt/sources.list
